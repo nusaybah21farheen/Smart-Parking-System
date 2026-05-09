@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Camera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="YU.png" width="100" height="100">
+    <h1>Al Yamamah Smart Parking</h1>
+  </div>
+
+  <ul>
+    <li><a href="index.html">Main Page</a></li>
+    <li><a href="sensor.html">Sensor Monitoring</a></li>
+    <li><a href="reservation.html">Reservation Booking</a></li>
+    <li><a href="ai.html" class="active">AI Camera</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <h2>AI Camera Monitoring</h2>
+
+  <div class="cards">
+
+    <!-- AI Controls -->
+    <div class="glass box">
+
+      <h3>AI Camera Analysis</h3>
+
+      <p>Select Gate</p>
+
+      <select id="gate">
+        <option>Gate 1</option>
+        <option>Gate 2</option>
+        <option>Gate 3</option>
+        <option>Gate 4</option>
+      </select>
+
+      <br><br>
+
+      <button onclick="runAI()">AI Analysis</button>
+
+      <br><br>
+
+      <div class="glass">
+        <h3>Detection Result</h3>
+
+        <p><strong>Status:</strong>
+          <span id="status">Waiting...</span>
+        </p>
+
+        <p><strong>Percentage:</strong>
+          <span id="percentage">0%</span>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Camera Image -->
+    <div class="glass box">
+
+      <h3>Live Camera</h3>
+
+<img src="parkinglot.png"
+     alt="Parking Camera"
+     style="width:100%; border-radius:15px;">
+     
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+function runAI() {
+
+  let percentage = Math.floor(Math.random() * 100);
+
+  let statusText = "";
+
+  if (percentage >= 70) {
+    statusText = "Parking Lot Full";
+  } else {
+    statusText = "Parking Lot Empty";
+  }
+
+  document.getElementById("percentage").innerText = percentage + "%";
+  document.getElementById("status").innerText = statusText;
+}
+
+</script>
+
+</body>
+</html>
