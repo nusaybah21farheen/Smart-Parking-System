@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservation Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="YU.png" width="100" height="100">
+    <h1>Al Yamamah Smart Parking</h1>
+  </div>
+
+  <ul>
+    <li><a href="index.html">Main Page</a></li>
+    <li><a href="sensor.html">Sensor Monitoring</a></li>
+    <li><a href="reservation.html" class="active">Reservation Booking</a></li>
+    <li><a href="ai.html">AI Camera</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <h2>Reservation Booking</h2>
+
+  <div class="cards">
+
+    <!-- Parking Details -->
+    <div class="glass box">
+      <h3>Parking Details</h3>
+
+      <p>Location of Parking</p>
+      <select>
+        <option>Gate 1</option>
+        <option>Gate 2</option>
+        <option>Gate 3</option>
+        <option>Gate 4</option>
+      </select>
+
+      <br><br>
+
+      <p>Slot Number</p>
+      <select>
+        <option>Slot A1</option>
+        <option>Slot A2</option>
+        <option>Slot B1</option>
+        <option>Slot B2</option>
+      </select>
+
+      <br><br>
+
+      <p>Reservation Duration</p>
+      <select>
+        <option>1 Hour</option>
+        <option>2 Hours</option>
+        <option>3 Hours</option>
+        <option>4 Hours</option>
+      </select>
+    </div>
+
+    <!-- Booking Information -->
+    <div class="glass box">
+      <h3>Booking Information</h3>
+
+      <p>Name</p>
+      <input type="text" placeholder="Enter your name">
+
+      <p>Student ID</p>
+      <input type="text" placeholder="Enter student ID">
+
+      <p>Car Type</p>
+      <input type="text" placeholder="Enter car type">
+
+      <p>License Plate Number</p>
+      <input type="text" placeholder="Enter license plate">
+
+      <p>Selected Parking Lot</p>
+      <select>
+        <option>Slot A1</option>
+        <option>Slot A2</option>
+        <option>Slot B1</option>
+        <option>Slot B2</option>
+      </select>
+
+      <br><br>
+
+      <button>Reserve Parking</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
