@@ -75,6 +75,10 @@ function reserveSlot(){
      window.location.href = "reservation.html";
     }
 }
+/* ===== RESERVE POPUP ===== */
+function confirmReservation() {
+  alert("Parking spot successfully reserved!");
+}
 
 /* ===== REAL TIME CLOCK ONLY ===== */
 setInterval(() => {
