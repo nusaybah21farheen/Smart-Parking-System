@@ -81,10 +81,13 @@ function confirmReservation() {
 }
 
 /* ===== REAL TIME CLOCK ONLY ===== */
-setInterval(() => {
-  document.getElementById("time").innerText =
-    new Date().toLocaleTimeString();
-}, 1000);
+const timeElement = document.getElementById("time");
+
+if (timeElement) {
+  setInterval(() => {
+    timeElement.innerText = new Date().toLocaleTimeString();
+  }, 1000);
+}
 
 /* INIT */
 window.onload = loadGate;
